@@ -1,0 +1,201 @@
+/**************** review_part css start ****************/
+.review_part {
+  position: relative;
+
+  .section_tittle {
+    h2 {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 0 25px 62px;
+      background-color: $white_color;
+      position: relative;
+      z-index: 1;
+      @media #{$small_mobile}{
+        margin: 0 25px 25px;
+      }
+      @media #{$large_mobile}{
+        margin: 0 25px 25px;
+      }
+      @media #{$tab_device}{
+      
+      }
+      @media #{$medium_device}{
+      
+      }
+      &:after {
+        position: absolute;
+        content: "";
+        width: 253px;
+        height: 1px;
+        background-color: $black_color;
+        top: 13px;
+        left: 0;
+        z-index: -1;
+
+        @media #{$medium_device} {
+          width: 130px;
+        }
+
+        @media #{$large_device} {
+          width: 150px;
+        }
+
+        @media #{$extra_large_device} {
+          width: 220px;
+        }
+
+        @media #{$tab} {
+          display: none;
+        }
+      }
+
+      &:before {
+        position: absolute;
+        content: "";
+        width: 253px;
+        height: 1px;
+        background-color: $black_color;
+        top: 13px;
+        right: 0;
+        z-index: -1;
+
+        @media #{$medium_device} {
+          width: 130px;
+        }
+
+        @media #{$large_device} {
+          width: 150px;
+        }
+
+        @media #{$extra_large_device} {
+          width: 220px;
+        }
+
+        @media #{$tab} {
+          display: none;
+        }
+
+      }
+    }
+  }
+
+  .slick-list {
+    padding: 0px !important;
+  }
+
+  @media #{$tab} {
+    overflow: hidden;
+  }
+
+  @media #{$medium_device} {}
+}
+
+.client_review_text {
+
+  p {
+    font-size: 14px;
+    margin: 26px 0px 30px;
+    line-height: 1.9;
+    color: #797979;
+    @media #{$tab}{
+      margin: 10px 0px 10px;
+    }
+    @media #{$medium_device}{
+    
+    }
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 700;
+    font-family: $font_stack_1;
+    margin-bottom: 15px;
+    @media #{$tab}{
+      margin-bottom: 5px;
+    }
+    @media #{$medium_device}{
+    
+    }
+  }
+
+  h5 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #797979;
+  }
+}
+
+// Styling the default Slick dots
+
+.slider-nav-thumbnails .slick-slide {
+  margin: 300px 0px 20px;
+
+  @media #{$tab} {
+    margin: 30px 0px 20px;
+  }
+
+  @media #{$medium_device} {}
+
+  img {
+    width: 120px;
+    margin: 0 auto;
+    @media #{$tab}{
+      width: 60px;
+    }
+    @media #{$medium_device}{
+    
+    }
+  }
+
+}
+
+.slider-nav-thumbnails {
+  z-index: 99;
+
+  .slick-center {
+    opacity: 1;
+
+    img {
+      width: 200px;
+      margin: 0 auto;
+      margin-top: -290px;
+      float: none;
+      @media #{$tab}{
+        margin-top: -25px;
+        width: 100px;
+      }
+      @media #{$medium_device}{
+      
+      }
+    }
+  }
+}
+
+
+.slider {
+  .slick-list {
+    margin-top: -297px;
+    background-color: #f7f7f7;
+    @media #{$tab}{
+      margin-top: 0;
+    }
+    @media #{$medium_device}{
+    
+    }
+  }
+
+  .client_review_text {
+    padding: 100px 50px;
+
+    @media #{$tab} {
+      padding: 30px 20px;
+    }
+
+    @media #{$medium_device} {
+      padding: 100px 50px 0;
+    } 
+    @media #{$large_device} {
+      padding: 100px 50px 25px;
+    }
+  }
+}

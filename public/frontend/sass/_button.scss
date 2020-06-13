@@ -1,0 +1,149 @@
+/* Main Button Area css
+============================================================================================ */
+.submit_btn{
+	width: auto;
+	display: inline-block;
+	background: $white_color;
+	padding: 0px 50px;
+	color: #fff;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 50px;
+	border-radius: 5px;
+	outline: none !important;
+	box-shadow: none !important;
+	text-align: center;
+	border: 1px solid $border_color;
+	cursor: pointer;
+	@include transform_time(0.5s);
+	&:hover{
+		background: transparent;
+		
+	}
+}
+.btn_1{
+	padding: 19px 40px;
+    font-size: 16px;
+    font-weight: 700;
+    background-color: #f4f4f4;
+    color: $black_color;
+	display: inline-block;
+	text-transform: uppercase;
+	@include transform_time(1s);
+	border-radius: 5px;
+	&:hover{
+		background-color: $btn_bg;
+		color: $white_color;
+		border-radius: 50px;
+		a{
+			color: $white_color;
+		}
+	}
+    a{
+		color: $white_color;
+		&:hover{
+			color: $white_color ;
+		}
+	}
+	@media #{$tab}{
+		padding: 12px 32px;
+	}
+	@media #{$medium_device}{
+	
+	}
+}
+.btn_3{
+	padding: 8px 30px;
+}
+.btn_2{
+    position: relative;
+    font-weight: 500;
+    color: $white_color;
+    display: inline-block;
+    z-index: 9;
+    @include transform_time(.6s);
+    &:after{
+        height: 30px;
+        width: 30px;
+        background-color: $btn_bg;
+        position: absolute;
+        content: "";
+        top: -5px;
+        left: -11px;
+        border-radius: 50%;
+		z-index: -1;
+		@include transform_time(.6s);
+    }
+    a{
+        color: $white_color;
+        font-weight: 500;
+    }
+    span{
+        margin-left: 6px;
+	}
+	
+}
+/*=================== custom button rule start ====================*/
+
+.button{
+	display: inline-block;
+	border: 1px solid transparent;
+	font-size: 15px;
+	font-weight: 500;
+	padding: 12px 54px;
+	border-radius: 4px;
+	color: $white_color;
+	border: 1px solid $border_color;
+	text-transform: uppercase;
+	background-color: $btn_bg;
+	cursor: pointer;
+	@include transform_time(0.5s);
+
+	@media(max-width: 767px){
+		font-size: 13px;
+		padding: 9px 24px;
+	}
+
+	&:hover{
+		color: $white_color;
+	}
+
+
+	&-link{
+		letter-spacing: 0;
+		color: #3b1d82;
+		border: 0;
+		padding: 0;
+
+		&:hover{
+			background: transparent;
+			color: #3b1d82;
+		}
+	}
+
+	&-header{
+		color: $white_color;
+		border-color: $border_color;
+
+		&:hover{
+			background: #b8024c;
+			color: $white_color;
+		}
+	}
+
+	&-contactForm{
+		color: $white_color;
+		border-color: $border_color;
+		padding: 12px 25px;
+
+		&:hover{
+			// border-color: $title-color;
+			// background: $title-color;
+			// color: $white_color;
+		}
+	}
+}
+
+
+/* End Main Button Area css
+============================================================================================ */

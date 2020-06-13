@@ -1,0 +1,181 @@
+/**************** banner part css start ****************/
+.banner_part{
+    height: 900px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-image: url(../img/banner_overlay.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    &:after{
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: "";
+        width: 100%;
+        height: 100%;
+        @extend %overlay_bg;
+        z-index: -1;
+    }
+    @media #{$small_mobile}{
+        height: 500px;
+    }
+    @media #{$large_mobile}{
+        height: 500px;
+    }
+    @media #{$tab_device}{
+        height: 500px;
+    }
+    .banner_text{
+        display: table;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        z-index: 99;
+        margin-top: 60px;
+        @media #{$tab}{
+            text-align: center;
+            margin-top: 10px;
+        }
+        .banner_text_iner{
+            display: table-cell;
+            vertical-align: middle;
+        }
+        h5{
+            font-size: 14px;
+            text-transform: capitalize;
+            font-weight: 400;
+            font-size: 35px;
+            color: $white_color;
+            margin-bottom: 0;
+            line-height: 25px;
+            @media #{$tab}{
+                margin-bottom: 10px;
+            }
+            @media #{$medium_device}{
+                margin-bottom: 10px;
+            }
+        }
+        h2{
+            font-size: 72px;
+            line-height: 75px;
+            margin: 0px 0px 20px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            color: $white_color;
+            @media #{$tab}{
+                font-size: 30px;
+                margin-bottom: 15px;
+                line-height: 35px;
+            }
+            @media #{$medium_device}{
+                font-size: 40px;
+                margin-bottom: 0;
+                line-height: 1.4;
+            }
+        }
+          
+        p{
+            color: rgb(244, 244, 244);
+            line-height: 2.25;
+            font-size: 16px;
+            margin-top: 46px;
+            @media #{$tab}{
+                margin-top: 0;
+                line-height: 25px;
+            }
+            @media #{$medium_device}{
+                margin-top: 15px;
+            }
+        }
+
+        .banner_btn{
+            display: inline-block;
+            margin-top: 40px;
+            padding: 10px 30px;
+            @media #{$tab}{
+                margin-top: 20px;
+            }
+        }
+    }
+    
+    .video_popup {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 95px;
+        height: 95px;
+        text-align: center;
+        padding-top: 102px;
+        padding-left: 34px;
+        z-index: 99 !important;
+        margin: 0 auto;
+        span{
+            width: 95px;
+            height: 95px;
+            background-color: $btn_bg;
+            display: inline-block;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 82px;
+            padding-left: 5px;
+            font-size: 20px;
+            color: #fff;
+            border: 7px solid $white_color;
+            box-shadow: 0px 5px 25.5px 4.5px rgba(20, 48, 58, 0.2);
+            &:hover{
+                background-color: #d8b25a;
+            }
+              
+        }
+        @media #{$small_mobile}{
+            top: 100px;
+            padding-top: 70px;
+            padding-left: 0px;
+
+        }
+        @media #{$large_mobile}{
+            top: 100px;
+            padding-top: 70px;
+            padding-left: 0px;
+        }
+        @media #{$tab_device}{
+            top: 100px;
+            padding-top: 80px;
+            padding-left: 0px;
+        }
+    }
+    .banner_social_icon {
+        position: absolute;
+        transform: rotate(-90deg);
+        z-index: 9999 !important;
+        left: -310px;
+        top: 49%;
+        li{
+            color: $font_2;
+            font-size: 13px;
+            font-family: 'Roboto', sans-serif;
+            a{
+                color: #777777;
+            }
+            span{
+                margin-right: 10px;
+                
+            }
+        }
+        i.fas.fa-circle {
+            font-size: 7px;
+            margin: 0px 10px 0px 20px;
+            color: $btn_bg;
+        }
+        a:hover{
+            color: $btn_bg !important;
+        }
+    }
+    .list-inline-item:not(:last-child){
+        margin-right: 0px;
+    }
+}
+  
+/**************** hero part css end ****************/

@@ -1,0 +1,139 @@
+/*************** portfolio project css ******************/
+.portfolio_area{
+    
+    .section_tittle{
+        h2{
+            font-size: 24px;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            text-transform: capitalize;
+            margin-bottom: 80px;
+            line-height: 24px;
+            &:after{
+                position: absolute;
+                top: 12px;
+                left: 191px;
+                content: "";
+                width: 180px;
+                height: 1px;
+                background-color: $black_color;
+                @media #{$tab} {
+                    width: 100px;
+                   left: 157px;
+                }
+            }
+            span{
+                color: $btn_bg;
+            }
+            @media #{$tab} {
+                margin-bottom: 20px;
+            }
+
+            @media #{$medium_device} {
+                margin-bottom: 40px;
+            }
+        }
+    }
+    .portfolio-filter{
+        position: absolute;
+        @media #{$tab}{
+            position: relative;
+        }
+        @media #{$medium_device}{
+        
+        }
+        h2{
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-bottom: 40px;
+            @media #{$tab}{
+                font-size: 25px;
+                margin-bottom: 20px;
+            }
+            @media #{$medium_device}{
+            
+            }
+            span{
+                color: $btn_bg;
+            }
+        }
+        a{
+            font-size: 14px;
+            border: 1px solid #eeeeee;
+            text-transform: uppercase;
+            padding: 8px 15px;
+            display: inline-block;
+            margin-right: 22px;
+            margin-bottom: 20px;
+            @include transform_time(0.5s);
+            @media #{$tab}{
+                margin-right: 15px;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+        .active{
+            border: 1px solid $btn_bg;
+            background-color: $btn_bg;
+            color: $white_color;
+            @include transform_time(0.5s);
+        }
+    }
+      
+    .nav-tabs {
+        border-bottom: 0px solid transparent;
+    }
+    .tab-content>.active {
+        display: flex;
+    }
+    .portfolio_box{
+        position: relative;
+        @media #{$tab}{
+            margin-bottom: 15px;
+        }
+        @media #{$medium_device}{
+        
+        }
+        .short_info{
+            position: absolute;
+            background-color: $white_color;
+            bottom: 0;
+            padding: 17px 40px;
+            @media #{$large_mobile}{
+                padding: 17px 17px;
+            }
+            @media #{$tab_device}{
+            
+            }
+            @media #{$medium_device}{
+            
+            }
+            p{
+                color: $btn_bg;
+                text-transform: capitalize;
+                letter-spacing: 1.5px;
+            }
+            h4{
+                font-size: 24px;
+                font-weight: 700;
+                margin-top: 9px;
+                line-height: 30px;
+            }
+        }
+    }
+    .single_portfolio_project{
+        &:first-child{
+            margin-bottom: 130px;
+            @media #{$tab}{
+                margin-bottom: 0;
+            }
+            @media #{$medium_device}{
+            
+            }
+        }
+    }
+}

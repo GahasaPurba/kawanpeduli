@@ -1,0 +1,177 @@
+/************about css start***************/
+.about_part {
+    position: relative;
+    z-index: 99;
+
+    .section_tittle {
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 80px;
+            padding-left: 195px;
+            text-transform: capitalize;
+            line-height: 24px;
+            @media #{$tab} {
+                padding-left: 175px;
+                margin-bottom: 20px;
+            }
+
+            @media #{$medium_device} {
+                padding-left: 175px;
+                margin-bottom: 20px;
+            }
+            
+            &:after {
+                position: absolute;
+                content: "";
+                left: 0;
+                top: 12px;
+                width: 180px;
+                height: 1px;
+                background-color: $btn_bg;
+
+                @media #{$tab} {
+                    width: 140px;
+                    left: 15px;
+                }
+
+                @media #{$medium_device} {
+                    width: 140px;
+                    left: 15px;
+                }
+            }
+            @media #{$medium_device} {
+                margin-bottom: 40px;
+            }
+            span {
+                color: $btn_bg;
+            }
+        }
+    }
+
+    .about_img {
+        position: relative;
+        z-index: 1;
+
+        &:after {
+            position: absolute;
+            content: "";
+            width: 48%;
+            height: 100%;
+            top: 77px;
+            right: 0;
+            background-image: url(../img/patten_bg.png);
+            z-index: -1;
+            @media #{$tab_device}{
+                top: 36px;
+                right: -15px;
+            } 
+            @media #{$medium_device} {
+                top: 36px;
+                right: -15px;
+            }           
+        }
+    }
+
+    .about_text {
+        @media #{$tab} {
+            margin-top: 25px;
+        }
+        @media #{$medium_device} {
+            
+        }
+        h2 {
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 1.6;
+            margin-bottom: 37px;
+            position: relative;
+            padding-right: 20px;
+
+            span {
+                color: $btn_bg;
+            }
+
+            @media #{$small_mobile} {
+                font-size: 25px;
+                margin-bottom: 15px;
+                line-height: 35px;
+            }
+
+            @media #{$large_mobile} {
+                font-size: 25px;
+                margin-bottom: 35px;
+                line-height: 35px;
+            }
+
+            @media #{$tab_device} {
+                font-size: 30px;
+                margin-bottom: 35px;
+                line-height: 40px;
+            }
+
+            @media #{$medium_device} {
+                font-size: 30px;
+                margin-bottom: 35px;
+                line-height: 40px;
+            }
+        }
+
+        p {
+            line-height: 1.929;
+            margin-bottom: 50px;
+            font-weight: 300;
+            @media #{$tab} {
+                margin-bottom: 0;
+            }
+            @media #{$medium_device} {
+                
+            }
+        }
+
+        .about_part_counter {
+            margin-top: 74px;
+            @media #{$tab} {
+                margin-top: 35px;
+            }
+            @media #{$medium_device} {
+                
+            }
+            .single_counter {
+                width: 33.33%;
+                text-align: center;
+                float: left;
+
+                span {
+                    font-size: 50px;
+                    font-weight: 300;
+                    line-height: 45px;
+                }
+
+                p {
+                    font-size: 16px;
+                    color: $black_color;
+                    text-transform: uppercase;
+                }
+
+                &:first-child {
+                    text-align: left;
+                }
+
+                &:last-child {
+                    text-align: right;
+                }
+            }
+        }
+    }
+    @media #{$tab} {
+        .btn_1{
+            margin-top: 25px;
+        }
+    }
+    @media #{$medium_device} {
+        
+    }
+}

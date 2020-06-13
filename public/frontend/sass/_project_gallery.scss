@@ -1,0 +1,323 @@
+/************** project  details gallery ******************/
+.project_gallery {
+    @media #{$tab} {
+        padding: 70px 0 50px;
+    }
+
+    .project_gallery_tittle {
+        max-width: 1140px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 24px;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            text-transform: capitalize;
+            margin-bottom: 80px;
+            line-height: 24px;
+
+            &:after {
+                position: absolute;
+                top: 12px;
+                left: 269px;
+                content: "";
+                width: 180px;
+                height: 1px;
+                background-color: $black_color;
+
+                @media #{$small_mobile} {
+                    display: none;
+                }
+
+                @media #{$large_mobile} {
+                    width: 100px;
+                    left: 260px;
+                }
+
+                @media #{$tab_device} {
+                    width: 150px;
+                    left: 260px;
+                }
+
+                @media #{$medium_device} {
+                    width: 150px;
+                    left: 280px;
+                }
+
+            }
+
+            span {
+                color: $btn_bg;
+            }
+
+            @media #{$tab} {
+                margin-bottom: 20px;
+            }
+
+            @media #{$medium_device} {
+                margin-bottom: 40px;
+            }
+        }
+    }
+
+    .col-lg-12 {
+        padding-right: 0;
+        padding-left: 0;
+        overflow: hidden;
+
+        @media #{$tab} {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        @media #{$medium_device} {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    }
+
+    .grid-sizer,
+    .grid-item {
+        width: 25%;
+        height: auto;
+
+        @media #{$small_mobile} {
+            width: 100%;
+            margin: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .project_img {
+        position: relative;
+        z-index: 1;
+
+        &:after {
+            position: absolute;
+            content: "";
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $black_color;
+            opacity: 0;
+            @include transform_time(1s);
+        }
+
+        @media #{$small_mobile} {
+            margin-bottom: 20px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .big_weight {
+        width: 50%;
+
+        @media #{$small_mobile} {
+            width: 100%;
+            margin: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .big_height {
+        width: 50%;
+        height: auto;
+
+        @media #{$small_mobile} {
+            width: 100%;
+            margin: 0;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    h2 {
+        text-transform: capitalize;
+        font-weight: 800;
+        font-size: 48px;
+        margin-bottom: 80px;
+
+        @media #{$small_mobile} {
+            margin-bottom: 40px;
+            font-size: 30px;
+        }
+
+        @media #{$large_mobile} {
+            margin-bottom: 40px;
+            font-size: 30px;
+        }
+
+        @media #{$tab_device} {
+            margin-bottom: 40px;
+            font-size: 30px;
+        }
+
+        @media #{$medium_device} {
+            margin-bottom: 40px;
+            font-size: 30px;
+        }
+    }
+
+    .project_gallery_hover_text {
+        position: absolute;
+        padding: 0 0 55px 39px;
+        bottom: -60px;
+        z-index: 99;
+        visibility: hidden;
+        opacity: 0;
+        @include transform_time(.5s);
+
+        p {
+            font-size: 14px;
+            font-weight: 400;
+            color: $btn_bg;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-weight: 600;
+            font-size: 28px;
+            color: $white_color;
+            margin: 12px 0 8px;
+            a{
+                color: $white_color;
+                &:hover{
+                    color: $btn_bg;
+                }
+            }
+        }
+
+        ul {
+            border-top: 1px solid $white_color;
+            padding-top: 10px;
+
+            li {
+                display: inline-block;
+                color: $white_color;
+                margin-right: 25px;
+                @media #{$tab} {
+                    margin-right: 5px;
+                }
+        
+                @media #{$medium_device} {
+                    margin-right: 15px;
+                }
+                span {
+                    color: $white_color;
+                    margin-right: 12px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .grid-item {
+        &:hover {
+            .project_img {
+                &:after {
+                    opacity: .5;
+                }
+            }
+
+            .project_gallery_hover_text {
+                visibility: visible;
+                opacity: 1;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+.gallery_details {
+    padding: 0 0 150px;
+
+    @media #{$tab} {
+        padding: 0 0 40px;
+    }
+
+    @media #{$medium_device} {
+        padding: 0 0 50px;
+    }
+
+    .project_img {
+        p {
+            font-size: 16px;
+            color: rgb(67, 67, 67);
+            line-height: 1.875;
+            margin: 30px 0;
+
+            @media #{$tab} {
+                margin: 10px 0;
+            }
+
+            @media #{$medium_device} {
+                margin: 10px 0;
+            }
+        }
+
+        .project_gallery_hover_text {
+            padding: 44px 0 0;
+            z-index: 99;
+            @include transform_time(.5s);
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+                color: $btn_bg;
+                text-transform: uppercase;
+                margin: 0;
+            }
+
+            h3 {
+                font-weight: 600;
+                font-size: 28px;
+                color: $black_color;
+                margin: 12px 0 8px;
+
+                @media #{$tab} {
+                    font-size: 20px;
+                }
+
+                @media #{$medium_device} {
+                    font-size: 20px;
+                }
+            }
+
+            ul {
+                padding-top: 10px;
+
+                li {
+                    display: inline-block;
+                    color: #b1b1b1;
+                    margin-right: 25px;
+                    @media #{$tab} {
+                        margin-right: 10px;
+                    }
+    
+                    @media #{$medium_device} {
+                        margin-right: 10px;
+                    }
+                    span {
+                        color: #b1b1b1;
+                        margin-right: 12px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+    }
+}
