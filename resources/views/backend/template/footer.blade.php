@@ -1,6 +1,6 @@
 <footer class="main-footer">
     <div class="footer-left">
-        Copyright &copy; 2020 <div class="bullet"></div> Developed By <a href="#">SixteenCoder - IT Del</a>
+        Copyright &copy; <script>document.write(new Date().getFullYear());</script> <div class="bullet"></div> Developed By <a href="#">SixteenCoder - IT Del</a>
     </div>
     <div class="footer-right">
     </div>
