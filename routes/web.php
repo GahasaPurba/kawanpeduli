@@ -58,20 +58,22 @@ Route::group(['middleware' => 'verified'], function () {
     Route::delete('/discussion/kill/{id}', 'DiscussionController@kill')->name('discussion.kill');
     Route::resource('/discussion', 'DiscussionController');
     Route::get('/discussionsearch', 'DiscussionController@search')->name('discussionsearch');
-    Route::get('/forum', 'ForumController@forum')->name('forum');
-    Route::get('/forumdetail/{slug}', 'ForumController@singleforum')->name('singleforum');
-    Route::get('/forumcategories/{category}', 'ForumController@category')->name('forumcategory');
-    Route::get('/forumtags/{tag}', 'ForumController@tag')->name('forumtag');
-    Route::get('/forumsearch', 'ForumController@search')->name('forumsearch');
 });
 
 Route::resource('/mail', 'MailController');
 Route::get('/statistik', 'StatistikController@index')->name('statistik');
+
 Route::get('/blog', 'BlogController@blog')->name('blog');
 Route::get('/blogdetail/{slug}', 'BlogController@singleblog')->name('singleblog');
 Route::get('/blogcategories/{category}', 'BlogController@category')->name('blogcategory');
 Route::get('/blogtags/{tag}', 'BlogController@tag')->name('blogtag');
 Route::get('/blogsearch', 'BlogController@search')->name('blogsearch');
+
+Route::get('/forum', 'ForumController@forum')->name('forum');
+Route::get('/forumdetail/{slug}', 'ForumController@singleforum')->name('singleforum');
+Route::get('/forumcategories/{category}', 'ForumController@category')->name('forumcategory');
+Route::get('/forumtags/{tag}', 'ForumController@tag')->name('forumtag');
+Route::get('/forumsearch', 'ForumController@search')->name('forumsearch');
 
 Route::get('login/google', 'Auth\LoginController@redirectToProvider1');
 Route::get('login/google/callback', 'Auth\LoginController@handleProviderCallback1');
