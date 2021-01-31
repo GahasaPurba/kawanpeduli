@@ -73,6 +73,7 @@
                         </form>
                     </div>
                 </div>
+                @if (Auth::check())
                 <div class="single_footer_part">
                     <p class="text-justify">
                         Tolong Berikan Feedback Pada Kami Dengan Mengisi Kuesioner Yang Kami Sediakan
@@ -81,6 +82,7 @@
                         <a href="{{ route('questionnaire.create') }}" class="btn btn-block btn-danger">Isi Kuesioner</a>
                     </div>
                 </div>
+                @endif
             </div>
         </div>
         <hr>
