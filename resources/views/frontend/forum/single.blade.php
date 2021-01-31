@@ -77,11 +77,9 @@
             </div>
             <div class="col-lg-4">
                 <div class="blog_right_sidebar">
-                    @if (Auth::check())
                     <aside class="single_sidebar_widget search_widget">
                         <a href="{{ route('discussion.create') }}" class="text-center button rounded-0 primary-bg text-white w-100">Buat Diskusi Baru</a>
                     </aside>
-                    @endif
                     <aside class="single_sidebar_widget search_widget">
                         <form method="GET" action="{{ route('forumsearch') }}">
                             @csrf
