@@ -50,7 +50,7 @@
                         </div>
                     </div>
                     <div class="simple-footer">
-                        Copyright &copy; SixteenCoder 2020
+                        Copyright &copy; SixteenCoder <script>document.write(new Date().getFullYear());</script>
                     </div>
                 </div>
             </div>
